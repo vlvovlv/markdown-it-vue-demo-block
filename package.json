@@ -9,6 +9,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "demo": "webpack-dev-server --inline --progress --config demo/webpack.config.js",
     "lint": "eslint --ext .js lib test index.js",
     "test": "node test/index.js",
     "docs:dev": "vuepress dev docs",
@@ -23,16 +24,33 @@
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
+    "@vlvovlv/vue-markdown-loader": "^1.0.0",
     "ava": "^0.25.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
     "eslint": "^5.0.1",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-prettier": "^2.6.1",
+    "html-webpack-plugin": "^3.2.0",
     "husky": "^1.0.0-rc.9",
     "lint-staged": "^7.2.0",
     "prettier": "^1.13.6",
-    "vuepress": "^0.10.2"
+    "vue": "^2.5.16",
+    "vue-loader": "^15.2.4",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "vuepress": "^0.10.2",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "markdown-it-container": "^2.0.0"
+  }
 }

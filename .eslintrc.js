@@ -18,5 +18,7 @@ module.exports = {
     'prettier/prettier': ERROR,
     'no-debugger': isProd ? ERROR : OFF,
     'no-console': isProd ? ERROR : OFF,
+    'no-plusplus': OFF,
+    'no-param-reassign': OFF,
   }
 };
