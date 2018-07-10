@@ -34,6 +34,10 @@ const webpackConfig = {
         use: ['vue-style-loader', 'css-loader'],
       },
       {
+        test: /\.styl(us)$/,
+        use: ['style-loader', 'css-loader', 'stylus-loader'],
+      },
+      {
         test: /\.md$/,
         use: [
           'vue-loader',

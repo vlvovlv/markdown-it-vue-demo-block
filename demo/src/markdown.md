@@ -1,5 +1,3 @@
-# hello
-
 :::demo This is description
 ```html
 <template>
