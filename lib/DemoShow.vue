@@ -30,12 +30,12 @@ $innerBorderColor = #00aba4
 $textColor = #2c3e50
 $codeBgColor = #292c36
 $borderColor = #ebebeb
+$lineNumbersWrapperWidth = 3.5rem
 
 .demoshow
   border: 1px solid $codeBgColor
   border-radius: 4px
   overflow: hidden
-  font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
 
 .demo-wrapper
   padding: 24px
@@ -45,12 +45,20 @@ $borderColor = #ebebeb
   overflow: hidden
 
 .description
+  overflow: hidden
+  padding: 10px 20px
+  font-size: 16px
+  line-height: 22px
+  color: #666
+  word-break: break-word
+  background-color: #fff
 
 .source-code
   background-color: $codeBgColor
 
 .content
-  code
+  code, .line-number
+    font-family source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
     color lighten($textColor, 20%)
     padding 0.25rem 0.5rem
     margin 0
@@ -62,7 +70,7 @@ $borderColor = #ebebeb
   pre, pre[class*="language-"]
     line-height 1.4
     padding 1.25rem 1.5rem
-    margin 0.85rem 0
+    margin: 0
     background-color $codeBgColor
     border-radius 6px
     overflow auto
