@@ -43,6 +43,7 @@
     "style-loader": "^0.21.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "url-loader": "^1.0.1",
     "vue": "^2.5.16",
     "vue-loader": "^15.2.4",
     "vue-style-loader": "^4.1.0",
@@ -56,6 +57,7 @@
     "cheerio": "^1.0.0-rc.2",
     "clipboard": "^2.0.1",
     "markdown-it-container": "^2.0.0",
-    "prismjs": "^1.15.0"
+    "prismjs": "^1.15.0",
+    "tippy.js": "^2.5.3"
   }
 }

@@ -38,6 +38,17 @@ const webpackConfig = {
         use: ['style-loader', 'css-loader', 'stylus-loader'],
       },
       {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000
+            }
+          }
+        ]
+      },
+      {
         test: /\.md$/,
         use: [
           'vue-loader',

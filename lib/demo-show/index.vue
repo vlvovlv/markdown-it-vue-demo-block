@@ -1,5 +1,5 @@
 <template>
-  <div class="demoshow">
+  <div class="demo-show">
     <!-- mount the demo component -->
     <div class="demo-wrapper">
       <slot name="demo-wrapper" />
@@ -11,6 +11,8 @@
       </div>
       <!-- highlighted source code -->
       <div class="source-code">
+        <!-- options -->
+        <options />
         <slot />
       </div>
     </div>
@@ -18,12 +20,12 @@
 </template>
 
 <script>
-import Clipboard from 'clipboard';
+import Options from './options';
 
 export default {
   name: 'DemoShow',
-  mounted() {
-    const clipboard = new Clipboard('.copy-button');
+  components: {
+    Options,
   },
 }
 </script>
@@ -37,7 +39,7 @@ $codeBgColor = #292c36
 $borderColor = #ebebeb
 $lineNumbersWrapperWidth = 3.5rem
 
-.demoshow
+.demo-show
   border: 1px solid $codeBgColor
   border-radius: 4px
   overflow: hidden
@@ -59,7 +61,11 @@ $lineNumbersWrapperWidth = 3.5rem
   background-color: #fff
 
 .source-code
+  position: relative
   background-color: $codeBgColor
+  &:hover
+    .source-code-options
+      opacity: 1
 
 .content
   code, .line-number
