@@ -18,8 +18,13 @@
 </template>
 
 <script>
+import Clipboard from 'clipboard';
+
 export default {
   name: 'DemoShow',
+  mounted() {
+    const clipboard = new Clipboard('.copy-button');
+  },
 }
 </script>
 

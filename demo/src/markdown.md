@@ -1,8 +1,8 @@
 :::demo This is description
-```html
+```html {3}
 <template>
   <div class="demo-1">
-    <h1>This is demo 1</h1>
+    <h1 @click="handleClick">This is demo 1</h1>
   </div>
 </template>
 <script>
@@ -23,3 +23,20 @@
 </style>
 ```
 :::
+
+<script>
+  export default {
+    name: 'demo-1',
+    created() {
+      console.log('demo-1 created');
+    },
+    mounted() {
+      console.log('demo-1 mounted');
+    },
+    methods: {
+      handleClick() {
+        console.log('clicked');
+      }
+    }
+  }
+</script>

@@ -8,4 +8,6 @@
 # install dependencies
 $ npm install
 
-# start developing...
+# see the demo preview
+$ npm run demo
+```
