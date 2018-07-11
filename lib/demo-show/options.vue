@@ -43,8 +43,14 @@ export default {
         transform: scale(1.1)
       &.codepen
         background: url('./imgs/codepen.svg') no-repeat center
-        background-size: contain
+        background-size: cover
       &.codesandbox
         background: url('./imgs/codesandbox.svg') no-repeat center
-        background-size: contain
+        background-size: cover
+      &.copy
+        height: 22px
+        width: 22px
+        margin-top: -1px
+        background: url('./imgs/copy.svg') no-repeat center
+        background-size: cover
 </style>
