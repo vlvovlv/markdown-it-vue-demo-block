@@ -3,6 +3,7 @@
     <li class="codepen" title="Open in CodePen"></li>
     <li class="codesandbox" title="Open in CodeSandBox"></li>
     <li class="copy" title="Copy to clipboard"></li>
+    <li class="download" title="Download as picture"></li>
   </ul>
 </template>
 

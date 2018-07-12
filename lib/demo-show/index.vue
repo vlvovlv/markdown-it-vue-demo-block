@@ -6,7 +6,7 @@
     </div>
     <div class="detail-wrapper">
       <!-- description -->
-      <div class="description">
+      <div class="description" v-if="$slots.description">
         <slot name="description" />
       </div>
       <!-- highlighted source code -->
