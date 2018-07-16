@@ -2,18 +2,18 @@
   <div class="demo-show">
     <!-- mount the demo component -->
     <div class="demo-wrapper">
-      <slot name="demo-wrapper" />
+      <slot name="demo-wrapper"></slot>
     </div>
     <div class="detail-wrapper">
       <!-- description -->
       <div class="description" v-if="$slots.description">
-        <slot name="description" />
+        <slot name="description"></slot>
       </div>
       <!-- highlighted source code -->
       <div class="source-code">
         <!-- options -->
-        <options />
-        <slot />
+        <options></options>
+        <slot></slot>
       </div>
     </div>
   </div>
