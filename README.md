@@ -2,6 +2,16 @@
 
 > 📝 markdown-it plugin to show vue demo block
 
+## Usage
+
+```bash
+$ yarn add prismjs
+```
+
+```bash
+$ yarn add --dev stylus stylus-loader
+```
+
 ## Development Setup
 
 ```bash
