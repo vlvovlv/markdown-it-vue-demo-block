@@ -5,11 +5,19 @@
 ## Usage
 
 ```bash
-$ yarn add prismjs
+$ yarn add markdown-it-vue-demo-block
 ```
 
-```bash
-$ yarn add --dev stylus stylus-loader
+## Add plugin
+
+### In webpack config
+
+### In vue files
+
+```javascript
+import DemoShow from 'markdown-it-vue-demo-block/lib/dist/demo-show';
+
+Vue.component(DemoShow.name, DemoShow);
 ```
 
 ## Development Setup
