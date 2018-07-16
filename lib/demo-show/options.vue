@@ -9,13 +9,11 @@
 
 <script>
 import tippy from 'tippy.js';
-import Clipboard from 'clipboard';
 
 export default {
   name: 'SourceCodeOptions',
   mounted() {
     tippy('.source-code-options li');
-    const clipboard = new Clipboard('.copy-button');
   },
 };
 </script>
