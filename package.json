@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-vue-demo-block",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "📝 markdown-it plugin to show vue demo block",
   "author": "vlvovlv <vvlvovlvv@gmail.com>",
   "main": "index.js",
